@@ -1,0 +1,12 @@
+# Sync Note Server
+
+## ENVs (required)
+
+- `MONGODB_URI`
+- `FRONTEND_URL`
+- `SESSION_SECRET`
+- `NODE_ENV`
+- `GOOGLE_CLIENT_ID`
+- `GOOGLE_CLIENT_SECRET`
+- `GOOGLE_CALLBACK_URL`
+- `PORT`
