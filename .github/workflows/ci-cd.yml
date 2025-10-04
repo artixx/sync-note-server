@@ -84,6 +84,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             cd /var/www/sync-note/server
             unzip -o deploy-server.zip
             rm deploy-server.zip
