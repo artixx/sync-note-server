@@ -4,6 +4,7 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "start": "node dist",
+    "start-ts": "ts-node src/index.ts",
     "typecheck": "tsc --noEmit",
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .ts,.tsx --report-unused-disable-directives",
     "test": "npm run typecheck && npm run lint"
