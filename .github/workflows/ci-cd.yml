@@ -89,5 +89,5 @@ jobs:
             cd /var/www/sync-note/server
             unzip -o deploy-server.zip
             rm deploy-server.zip
-            npm ci --production
+            npm ci --omit=dev
             pm2 restart ../ecosystem.config.js

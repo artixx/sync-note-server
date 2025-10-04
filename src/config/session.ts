@@ -16,6 +16,7 @@ export const sessionMiddleware = session({
     ttl: 14 * 24 * 60 * 60, // 14 days
     touchAfter: 24 * 60 * 60, // 1 day
   }),
+  proxy: env.NODE_ENV === 'production',
   cookie: {
     secure: env.NODE_ENV === 'production',
     httpOnly: true,
