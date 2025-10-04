@@ -7,7 +7,7 @@ import {
   TAB_CHARACTER_LIMIT,
   TAB_LIMIT,
   TAB_TITLE_CHARACTER_LIMIT,
-} from '../config/const.ts'
+} from '../config/const'
 
 const tabRoutes = express.Router()
 

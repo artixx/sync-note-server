@@ -1,8 +1,8 @@
 import passport from 'passport'
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20'
 
-import { User } from '../models/User.ts'
-import { env } from './env.ts'
+import { User } from '../models/User'
+import { env } from './env'
 
 passport.use(
   new GoogleStrategy(

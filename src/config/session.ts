@@ -2,7 +2,7 @@ import session from 'express-session'
 import MongoStore from 'connect-mongo'
 import { csrfSync } from 'csrf-sync'
 
-import { env } from './env.ts'
+import { env } from './env'
 
 export const { csrfSynchronisedProtection, generateToken, revokeToken } =
   csrfSync()

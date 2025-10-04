@@ -1,14 +1,14 @@
 import express from 'express'
 import { NextFunction, Request, Response } from 'express'
 
-import { passport } from '../config/passport.ts'
+import { passport } from '../config/passport'
 import {
   csrfSynchronisedProtection,
   generateToken,
   revokeToken,
 } from '../config/session'
-import { requireAuth } from '../middlewares/auth.ts'
-import { User } from '../models/User.ts'
+import { requireAuth } from '../middlewares/auth'
+import { User } from '../models/User'
 import { env } from '../config/env'
 
 const authRoutes = express.Router()
